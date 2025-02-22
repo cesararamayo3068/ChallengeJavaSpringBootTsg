@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "33857ca6-6e8b-4227-a3b5-15aaf50dcaaa",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9293756"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los Posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKdWFuUGVyZXoiLCJpYXQiOjE3NDAyNTcxOTIsImV4cCI6MTc0MDI2MDc5Mn0.5YXVJDU-w9JaXj2jY-_djFC4KOYhylBztRpSkGZHWjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los Posts Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKdWFuUGVyZXoiLCJpYXQiOjE3NDAyNTcxOTIsImV4cCI6MTc0MDI2MDc5Mn0.5YXVJDU-w9JaXj2jY-_djFC4KOYhylBztRpSkGZHWjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/posts/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear nuevo Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKdWFuUGVyZXoiLCJpYXQiOjE3NDAyNTcxOTIsImV4cCI6MTc0MDI2MDc5Mn0.5YXVJDU-w9JaXj2jY-_djFC4KOYhylBztRpSkGZHWjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mi primer post desde Nuevo \",\r\n    \"content\": \"Este es un post de prueba desde Nuevo.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Post por id Usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKdWFuUGVyZXoiLCJpYXQiOjE3NDAyNTcxOTIsImV4cCI6MTc0MDI2MDc5Mn0.5YXVJDU-w9JaXj2jY-_djFC4KOYhylBztRpSkGZHWjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/posts/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
