@@ -7,7 +7,6 @@ asegurando que cada usuario solo pueda acceder a sus propios posts.
 
 - **Java 17**: Lenguaje de programación utilizado para desarrollar la API.
 - **Spring Boot 3.4.3**: Framework de desarrollo para crear aplicaciones Java basadas en microservicios.
-- **Swagger/OpenAPI**: Para la documentación y prueba interactiva de los endpoints de la API.
 - **JWT (JSON Web Tokens)**: Para la autenticación y autorización de los usuarios.
 - **MySQL**: Base de datos relacional utilizada para almacenar los datos de la aplicación.
 
